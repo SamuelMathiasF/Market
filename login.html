@@ -2,16 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAMILY</title>
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="images/style.css"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -41,17 +36,41 @@
                         <li class="nav-item">
                             <a class="nav-link" href="login.html">Login</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div class="container p-5 my-5 border">
-            <img src="images/familia.jpg" class="img-fluid" alt="...">
+            <div class="container mt-3">
+                <h3>FAMILY</h3>
+                <p>Ingrese sus datos a continuación</p>
+                <form action="login.html" class="was-validated">
+                    <div class="mb-3 mt-3">
+                        <label for="uname" class="form-label">Usuario:</label>
+                        <input type="text" class="form-control" id="uname" placeholder="Ingrese Usuario" name="uname"
+                            required>
+                        <div class="valid-feedback">Validado</div>
+                        <div class="invalid-feedback">Debe llenar este campo</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label">Clave:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Ingrese su clave" name="pswd"
+                            required>
+                        <div class="valid-feedback">Validado</div>
+                        <div class="invalid-feedback">Debe llenar este campo</div>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+                        <label class="form-check-label" for="myCheck">Recordar Usuario</label>
+                        <div class="valid-feedback">Validado</div>
+                        <div class="invalid-feedback">Marque este cuadro para continuar</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Ingresar</button>
+                </form>
+            </div>
         </div>
     </div>
+
 </body>
 
 </html>
